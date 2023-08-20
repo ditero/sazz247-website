@@ -1,6 +1,48 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <ElementorSection />
+    <HeaderSection /> <!-- Add this line -->
+    <router-view></router-view>
+    <HeroSection />
+    <ServicesSection />
+    <AboutSection />
+    <ContactSection />
+    <FooterSection />
+  </div>
+</template>
+
+<script>
+import HeaderSection from '@/components/HeaderSection.vue'; // Import the component
+import ElementorSection from '@/components/ElementorSection.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import ServicesSection from '@/components/ServicesSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import ContactSection from '@/components/ContactSection.vue';
+import FooterSection from '@/components/FooterSection.vue';
+
+export default {
+  name: 'App',
+  components: {
+    ElementorSection,
+    HeaderSection, // Register the component
+    HeroSection,
+    ServicesSection,
+    AboutSection,
+    ContactSection,
+    FooterSection
+  }
+};
+</script>
+
+<style>
+/* Apply global styles here if needed */
+</style>
+
+
+<!-- <template>
+  <router-view></router-view>
+  <HelloWorld/>
 </template>
 
 <script>
@@ -13,6 +55,7 @@ export default {
   }
 }
 </script>
+-->
 
 <style>
 #app {
@@ -21,6 +64,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
-</style>
+</style> 
