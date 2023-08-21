@@ -1,15 +1,16 @@
-
 <template>
-  <div id="app">
-    <ElementorSection />
-    <HeaderSection /> <!-- Add this line -->
-    <router-view></router-view>
-    <HeroSection />
-    <ServicesSection />
-    <AboutSection />
-    <ContactSection />
-    <FooterSection />
-  </div>
+  <v-app>
+    <v-main>
+      <ElementorSection />
+      <HeaderSection /> <!-- Add this line -->
+      <router-view></router-view>
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <ContactSection />
+      <FooterSection />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -31,39 +32,9 @@ export default {
     AboutSection,
     ContactSection,
     FooterSection
-  }
-};
-</script>
-
-<style>
-/* Apply global styles here if needed */
-</style>
-
-
-<!-- <template>
-  <router-view></router-view>
-  <HelloWorld/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  },
+  data: () => ({
+    //
+  }),
 }
 </script>
--->
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  /* margin-top: 60px; */
-}
-</style> 

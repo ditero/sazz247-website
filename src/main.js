@@ -1,14 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import Vue from 'vue';
-import router from '@/router'; // Import your router configuration
+import router from './router'
+import vuetify from './plugins/vuetify'
+import { loadFonts } from './plugins/webfontloader'
+import 'vuetify/dist/vuetify.min.css';
+import '@mdi/font/css/materialdesignicons.css';
 
-// new Vue({
-//   router,
-//   render: h => h(App)
-// }).$mount('#app');
+loadFonts()
 
-// createApp(App).mount('#app')
-const app = createApp(App);
-app.use(router); // Use the router instance
-app.mount('#app');
+createApp(App)
+  .use(router)
+  .use(vuetify)
+  .mount('#app')

@@ -3,7 +3,7 @@
       <div class="container">
         <div class="header-content">
           <div class="logo">
-            <img src="/assets/logo.png" alt="SAZZ24-7" />
+            <img src="@/assets/sazz.png" alt="SAZZ24-7" />
           </div>
           <nav class="navigation">
             <ul class="nav-links">
@@ -30,7 +30,7 @@
     color: #ffffff;
     padding: 20px 0;
     position: fixed;
-    top: 60px;
+    top: 40px;
     width: 100%;
     z-index: 1000;
   }
@@ -39,10 +39,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo img {
-    max-width: 150px;
   }
   
   .nav-links {

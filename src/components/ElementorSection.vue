@@ -4,27 +4,37 @@
       <div class="elementor-content">
         <div class="contact-info">
           <a href="tel:0212072836" class="contact-item">
-            <i class="fas fa-phone"></i> 0212072836
+            <v-icon left>mdi-phone</v-icon> 0212072836
           </a>
           <a href="mailto:sazzlimited@gmail.com" class="contact-item">
-            <i class="fas fa-envelope"></i> sazzlimited@gmail.com
+            <v-icon left>mdi-email</v-icon> sazzlimited@gmail.com
           </a>
         </div>
         <div class="social-links">
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook-f"></i> Facebook
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitter"></i> Twitter
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
+            <v-icon @click="openSocialLink('facebook')">mdi-facebook</v-icon>
+            <v-icon @click="openSocialLink('twitter')">mdi-twitter</v-icon>
+            <v-icon @click="openSocialLink('instagram')">mdi-instagram</v-icon>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    openSocialLink(platform) {
+      const socialLinks = {
+        facebook: 'https://www.facebook.com/your-page',
+        twitter: 'https://twitter.com/your-profile',
+        instagram: 'https://www.instagram.com/your-account',
+      };
+
+      window.open(socialLinks[platform], '_blank');
+    },
+  },
+};
+</script>
 
 <style scoped>
 .elementor-section {
@@ -32,6 +42,11 @@
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
+  position: fixed; /* Set position to fixed */
+  /* top: 60px; Adjust as needed */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .container {
@@ -68,7 +83,8 @@
 }
 
 .social-icon {
-  font-size: 14px;
+  /* Adjust the font size to make the icons smaller */
+  font-size: 12px;
 }
 
 .contact-item:hover,
