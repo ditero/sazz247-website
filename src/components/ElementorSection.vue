@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .elementor-section {
-  background-color: #1f1f1f; /* Black background */
+  background-color: #000000; /* Black background */
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
@@ -46,7 +46,7 @@ export default {
   /* top: 60px; Adjust as needed */
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .container {

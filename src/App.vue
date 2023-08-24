@@ -6,8 +6,8 @@
       <router-view></router-view>
       <HeroSection />
       <ServicesSection />
-      <AboutSection />
-      <ContactSection />
+      <!-- <AboutSection />
+      <ContactSection /> -->
       <FooterSection />
     </v-main>
   </v-app>
@@ -18,8 +18,8 @@ import HeaderSection from '@/components/HeaderSection.vue'; // Import the compon
 import ElementorSection from '@/components/ElementorSection.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import ServicesSection from '@/components/ServicesSection.vue';
-import AboutSection from '@/components/AboutSection.vue';
-import ContactSection from '@/components/ContactSection.vue';
+// import AboutSection from '@/components/AboutSection.vue';
+// import ContactSection from '@/components/ContactSection.vue';
 import FooterSection from '@/components/FooterSection.vue';
 
 export default {
@@ -29,8 +29,8 @@ export default {
     HeaderSection, // Register the component
     HeroSection,
     ServicesSection,
-    AboutSection,
-    ContactSection,
+    // AboutSection,
+    // ContactSection,
     FooterSection
   },
   data: () => ({
@@ -38,3 +38,8 @@ export default {
   }),
 }
 </script>
+<style scoped>
+  .v-main {
+    --v-layout-bottom: 0px !important;
+  }
+</style>

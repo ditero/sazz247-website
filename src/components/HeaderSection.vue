@@ -2,9 +2,13 @@
     <header class="header">
       <div class="container">
         <div class="header-content">
-          <div class="logo">
+          <!-- <div class="logo">
             <img src="@/assets/sazz.png" alt="SAZZ24-7" />
-          </div>
+          </div> -->
+          <v-img src="@/assets/sazz.png" alt="SAZZ24-7" max-width="90px" top="5px" left="10px"></v-img>
+          <!-- <v-img
+            src="@/assets/sazz.png" alt="SAZZ24-7"
+        ></v-img> -->
           <nav class="navigation">
             <ul class="nav-links">
               <li><router-link to="/">Home</router-link></li>
@@ -30,7 +34,7 @@
     color: #ffffff;
     padding: 20px 0;
     position: fixed;
-    top: 40px;
+    top: 25px;
     width: 100%;
     z-index: 1000;
   }
