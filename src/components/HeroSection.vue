@@ -1,8 +1,10 @@
 <template>
     <section class="hero-section">
         <div class="overlay">
+          <div class="company-name">
+                <h1 class="hero-title">SAZZ24-7</h1>
+              </div>
             <div class="content">
-                <h1 class="hero-title">SAZZ247</h1>
                 <p class="hero-description">Experience Excellence in Security Services</p>
                 <form class="get-in-touch-form">
                     <input type="text" placeholder="Your Name" class="input-field">
@@ -24,10 +26,12 @@
     background-position: center;
     height: 70vh;
 }
-
+.company-name {
+  z-index: 9999;
+}
 .hero-title {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin-top: 90px;
